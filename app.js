@@ -42,18 +42,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // data.getChange()
 // // data.name = "jojo"
 // console.log(data)
+// class A {
+//     // private name:string = "Umayer"
+//     constructor(protected name:string){
+//     }
+// }
+// class B extends A {
+//     show(){
+//         console.log(this.name)
+//     }
+// }
+// const b = new B("Umayer")
+// b.show()
 class A {
     name;
-    // private name:string = "Umayer"
     constructor(name) {
         this.name = name;
     }
-}
-class B extends A {
     show() {
-        console.log(this.name);
+        this.name = "Lala";
     }
 }
-const b = new B("Umayer");
+const b = new A("Umayer");
 b.show();
+console.log(b);
 //# sourceMappingURL=app.js.map

@@ -50,16 +50,27 @@
 // // data.name = "jojo"
 // console.log(data)
 
-class A {
-    // private name:string = "Umayer"
-    constructor(protected name:string){
+// class A {
+//     // private name:string = "Umayer"
+//     constructor(protected name:string){
 
-    }
-}
-class B extends A {
+//     }
+// }
+// class B extends A {
+//     show(){
+//         console.log(this.name)
+//     }
+// }
+// const b = new B("Umayer")
+// b.show()
+
+
+class A {
+    constructor(public readonly name:string){}
     show(){
-        console.log(this.name)
+        this.name = "Lala"
     }
 }
-const b = new B("Umayer")
+const b = new A("Umayer")
 b.show()
+console.log(b)
