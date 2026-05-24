@@ -1,5 +1,5 @@
 class Car {
-    constructor(public Brand: string,public Color: string,public Price: number,public Free: Boolean){
+    constructor(private Brand: string,public Color: string,public Price: number,public Free: Boolean){
 
     }
     getData() {
