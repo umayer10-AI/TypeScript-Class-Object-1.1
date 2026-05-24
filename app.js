@@ -11,24 +11,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // // b.Brand = "Umayer"
 // b.getData()
 // console.log(b.Brand)
+// class A {
+//     private gg:string = "Halua"
+//     constructor(public name: string, public age: number = 0){
+//     }
+// }
+// class B extends A {
+//     constructor(name: string, age: number){
+//         super(name,age)
+//     }
+//     getVal(){
+//         console.log(this.name,this.age,this.gg)
+//     }
+// }
+// const data = new B("Umayer",21)
+// data.getVal()
+// console.log(data)
 class A {
-    name;
-    age;
-    gg = "Halua";
-    constructor(name, age = 0) {
-        this.name = name;
-        this.age = age;
-    }
+    name = "Umayer";
 }
 class B extends A {
-    constructor(name, age) {
-        super(name, age);
-    }
-    getVal() {
-        console.log(this.name, this.age, this.gg);
-    }
+    meterial = "metal";
 }
-const data = new B("Umayer", 21);
-data.getVal();
-// console.log(data)
+const data = new B();
+console.log(data);
 //# sourceMappingURL=app.js.map

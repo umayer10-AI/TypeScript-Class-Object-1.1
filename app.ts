@@ -11,22 +11,33 @@
 // b.getData()
 // console.log(b.Brand)
 
-class A {
-    private gg:string = "Halua"
-    constructor(public name: string, public age: number = 0){
+// class A {
+//     private gg:string = "Halua"
+//     constructor(public name: string, public age: number = 0){
 
-    }
+//     }
+// }
+// class B extends A {
+//     constructor(name: string, age: number){
+//         super(name,age)
+//     }
+
+//     getVal(){
+//         console.log(this.name,this.age,this.gg)
+//     }
+// }
+
+// const data = new B("Umayer",21)
+// data.getVal()
+// console.log(data)
+
+
+class A {
+    public name: string = "Umayer"
 }
 class B extends A {
-    constructor(name: string, age: number){
-        super(name,age)
-    }
-
-    getVal(){
-        console.log(this.name,this.age,this.gg)
-    }
+    public meterial: string = "metal"
 }
 
-const data = new B("Umayer",21)
-data.getVal()
-// console.log(data)
+const data = new B()
+console.log(data)
