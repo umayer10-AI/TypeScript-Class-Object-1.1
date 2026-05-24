@@ -21,7 +21,11 @@ class B extends A {
     constructor(name) {
         super(name);
     }
+    getVal() {
+        console.log(this.name);
+    }
 }
 const data = new B("Umayer");
-console.log(data);
+data.getVal();
+// console.log(data)
 //# sourceMappingURL=app.js.map
