@@ -11,8 +11,12 @@ class Car {
         this.Price = Price;
         this.Free = Free;
     }
+    getData() {
+        this.Brand = "lala";
+    }
 }
 const b = new Car("TOYOTA", "Black", 5000, true);
-b.Brand = "Umayer";
-console.log(b.Brand)
+// b.Brand = "Umayer"
+b.getData();
+console.log(b.Brand);
 //# sourceMappingURL=app.js.map
