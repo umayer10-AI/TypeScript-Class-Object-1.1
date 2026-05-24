@@ -13,5 +13,6 @@ class Car {
     }
 }
 const b = new Car("TOYOTA", "Black", 5000, true);
+b.Brand = "Umayer";
 console.log(b.Brand)
 //# sourceMappingURL=app.js.map
