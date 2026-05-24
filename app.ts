@@ -12,20 +12,21 @@
 // console.log(b.Brand)
 
 class A {
-    constructor(public name: string){
+    constructor(public name: string, public age: number = 0){
 
     }
 }
 class B extends A {
-    constructor(name: string){
-        super(name)
+    constructor(name: string, age: number){
+        super(name,age)
     }
 
     getVal(){
-        console.log(this.name)
+        this.name="lala"
+        console.log(this.name,this.age)
     }
 }
 
-const data = new B("Umayer")
+const data = new B("Umayer",21)
 data.getVal()
 // console.log(data)

@@ -13,19 +13,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(b.Brand)
 class A {
     name;
-    constructor(name) {
+    age;
+    constructor(name, age = 0) {
         this.name = name;
+        this.age = age;
     }
 }
 class B extends A {
-    constructor(name) {
-        super(name);
+    constructor(name, age) {
+        super(name, age);
     }
     getVal() {
-        console.log(this.name);
+        this.name = "lala";
+        console.log(this.name, this.age);
     }
 }
-const data = new B("Umayer");
+const data = new B("Umayer", 21);
 data.getVal();
 // console.log(data)
 //# sourceMappingURL=app.js.map
