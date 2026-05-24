@@ -54,16 +54,26 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // const b = new B("Umayer")
 // b.show()
+// class A {
+//     constructor(public readonly name:string){}
+//     show(){
+//         this.name = "Lala"
+//     }
+// }
+// const b = new A("Umayer")
+// b.show()
+// console.log(b)
 class A {
     name;
-    constructor(name) {
+    age;
+    gender;
+    constructor(name, age, gender) {
         this.name = name;
-    }
-    show() {
-        this.name = "Lala";
+        this.age = age;
+        this.gender = gender;
     }
 }
-const b = new A("Umayer");
-b.show();
-console.log(b);
+const b = new A("Umayer", 21, "male");
+const c = new A("Hello", 25);
+console.log(b, c);
 //# sourceMappingURL=app.js.map

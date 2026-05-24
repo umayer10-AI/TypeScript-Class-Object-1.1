@@ -65,12 +65,21 @@
 // b.show()
 
 
+// class A {
+//     constructor(public readonly name:string){}
+//     show(){
+//         this.name = "Lala"
+//     }
+// }
+// const b = new A("Umayer")
+// b.show()
+// console.log(b)
+
 class A {
-    constructor(public readonly name:string){}
-    show(){
-        this.name = "Lala"
+    constructor(public name: string, public age:number, public gender?:string){
+
     }
 }
-const b = new A("Umayer")
-b.show()
-console.log(b)
+const b = new A("Umayer", 21, "male")
+const c = new A("Hello", 25)
+console.log(b,c)
