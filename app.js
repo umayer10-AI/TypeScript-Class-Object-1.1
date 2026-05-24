@@ -28,11 +28,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // data.getVal()
 // console.log(data)
 class A {
+    // public name: string = "Umayer"
+    // private name: string = "Umayer"
     name = "Umayer";
 }
 class B extends A {
     meterial = "metal";
+    getChange() {
+        this.name = "Lala";
+    }
 }
 const data = new B();
+data.getChange();
+// data.name = "jojo"
 console.log(data);
 //# sourceMappingURL=app.js.map

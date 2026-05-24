@@ -33,11 +33,19 @@
 
 
 class A {
-    public name: string = "Umayer"
+    // public name: string = "Umayer"
+    // private name: string = "Umayer"
+    protected name: string = "Umayer"
 }
 class B extends A {
     public meterial: string = "metal"
+
+    getChange(){
+        this.name = "Lala"
+    }
 }
 
 const data = new B()
+data.getChange()
+// data.name = "jojo"
 console.log(data)
