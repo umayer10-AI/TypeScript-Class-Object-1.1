@@ -12,6 +12,7 @@
 // console.log(b.Brand)
 
 class A {
+    private gg:string = "Halua"
     constructor(public name: string, public age: number = 0){
 
     }
@@ -22,8 +23,7 @@ class B extends A {
     }
 
     getVal(){
-        this.name="lala"
-        console.log(this.name,this.age)
+        console.log(this.name,this.age,this.gg)
     }
 }
 

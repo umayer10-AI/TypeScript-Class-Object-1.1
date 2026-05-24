@@ -14,6 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class A {
     name;
     age;
+    gg = "Halua";
     constructor(name, age = 0) {
         this.name = name;
         this.age = age;
@@ -24,8 +25,7 @@ class B extends A {
         super(name, age);
     }
     getVal() {
-        this.name = "lala";
-        console.log(this.name, this.age);
+        console.log(this.name, this.age, this.gg);
     }
 }
 const data = new B("Umayer", 21);
