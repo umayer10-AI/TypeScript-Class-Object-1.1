@@ -27,19 +27,33 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // const data = new B("Umayer",21)
 // data.getVal()
 // console.log(data)
+// class A {
+//     // public name: string = "Umayer"
+//     // private name: string = "Umayer"
+//     protected name: string = "Umayer"
+// }
+// class B extends A {
+//     public meterial: string = "metal"
+//     getChange(){
+//         this.name = "Lala"
+//     }
+// }
+// const data = new B()
+// data.getChange()
+// // data.name = "jojo"
+// console.log(data)
 class A {
-    // public name: string = "Umayer"
-    // private name: string = "Umayer"
-    name = "Umayer";
-}
-class B extends A {
-    meterial = "metal";
-    getChange() {
-        this.name = "Lala";
+    name;
+    // private name:string = "Umayer"
+    constructor(name) {
+        this.name = name;
     }
 }
-const data = new B();
-data.getChange();
-// data.name = "jojo"
-console.log(data);
+class B extends A {
+    show() {
+        console.log(this.name);
+    }
+}
+const b = new B("Umayer");
+b.show();
 //# sourceMappingURL=app.js.map

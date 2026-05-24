@@ -32,20 +32,34 @@
 // console.log(data)
 
 
-class A {
-    // public name: string = "Umayer"
-    // private name: string = "Umayer"
-    protected name: string = "Umayer"
-}
-class B extends A {
-    public meterial: string = "metal"
+// class A {
+//     // public name: string = "Umayer"
+//     // private name: string = "Umayer"
+//     protected name: string = "Umayer"
+// }
+// class B extends A {
+//     public meterial: string = "metal"
 
-    getChange(){
-        this.name = "Lala"
+//     getChange(){
+//         this.name = "Lala"
+//     }
+// }
+
+// const data = new B()
+// data.getChange()
+// // data.name = "jojo"
+// console.log(data)
+
+class A {
+    // private name:string = "Umayer"
+    constructor(protected name:string){
+
     }
 }
-
-const data = new B()
-data.getChange()
-// data.name = "jojo"
-console.log(data)
+class B extends A {
+    show(){
+        console.log(this.name)
+    }
+}
+const b = new B("Umayer")
+b.show()
