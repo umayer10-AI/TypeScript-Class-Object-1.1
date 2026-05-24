@@ -1,12 +1,26 @@
-class Car {
-    constructor(private Brand: string,public Color: string,public Price: number,public Free: Boolean){
+// class Car {
+//     constructor(private Brand: string,public Color: string,public Price: number,public Free: Boolean){
+
+//     }
+//     getData() {
+//         this.Brand="lala"
+//     }
+// }
+// const b = new Car("TOYOTA", "Black", 5000, true)
+// // b.Brand = "Umayer"
+// b.getData()
+// console.log(b.Brand)
+
+class A {
+    constructor(public name: string){
 
     }
-    getData() {
-        this.Brand="lala"
+}
+class B extends A {
+    constructor(name: string){
+        super(name)
     }
 }
-const b = new Car("TOYOTA", "Black", 5000, true)
-// b.Brand = "Umayer"
-b.getData()
-console.log(b.Brand)
+
+const data = new B("Umayer")
+console.log(data)
